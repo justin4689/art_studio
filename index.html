@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="shortcut icon" href="/assets/logo-black.png" type="image/x-icon">
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
@@ -26,10 +25,18 @@
         </div>
       </div>
       <ul class="nav__links" id="nav-links">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">SERVICE</a></li>
-        <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#">CONTACT US</a></li>
+        <li><a href="#" data-i18n="nav.home">HOME</a></li>
+        <li><a href="#service" data-i18n="nav.service">SERVICE</a></li>
+        <li><a href="#portfolio" data-i18n="nav.portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">CONTACT US</a></li>
+        <li class="lang__switcher__wrapper">
+          <div class="lang__switcher" id="lang-switcher">
+            <button class="lang__btn active" data-lang="en" title="English"><img src="https://flagcdn.com/20x15/gb.png" alt="EN" class="lang__flag"> EN</button>
+            <button class="lang__btn" data-lang="fr" title="Français"><img src="https://flagcdn.com/20x15/fr.png" alt="FR" class="lang__flag"> FR</button>
+            <button class="lang__btn" data-lang="es" title="Español"><img src="https://flagcdn.com/20x15/es.png" alt="ES" class="lang__flag"> ES</button>
+            <button class="lang__btn" data-lang="de" title="Deutsch"><img src="https://flagcdn.com/20x15/de.png" alt="DE" class="lang__flag"> DE</button>
+          </div>
+        </li>
       </ul>
     </nav>
 
@@ -38,15 +45,15 @@
         <img src="assets/image1.jpg" alt="header" class="header-image" />
       </div>
       <div class="header__content">
-        <h2>JOIN OUR CLUB</h2>
-        <h1>Yoga For Your Healthy Life</h1>
-        <p>
+        <h2 data-i18n="header.badge">JOIN OUR CLUB</h2>
+        <h1 data-i18n="header.title">Yoga For Your Healthy Life</h1>
+        <p data-i18n="header.desc">
           Join our club and discover the true benefits of yoga. Enhance
           flexibility, reduce stress, and embrace a healthier, balanced
           lifestyle with guided sessions made for everyone.
         </p>
         <div class="header__btn">
-          <button>BOOK NOW</button>
+          <button data-i18n="header.btn">BOOK NOW</button>
         </div>
         <ul class="header__socials">
           <li>
@@ -61,6 +68,217 @@
         </ul>
       </div>
     </header>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="service">
+      <div class="section__container services__container">
+        <p class="section__subheader" data-i18n="services.subheader">WHAT WE OFFER</p>
+        <h2 class="section__header" data-i18n="services.header">Our Yoga Services</h2>
+        <div class="services__grid">
+          <div class="services__card">
+            <i class="ri-heart-pulse-line"></i>
+            <h4 data-i18n="services.hatha.title">Hatha Yoga</h4>
+            <p data-i18n="services.hatha.desc">Balance your body and mind with classic Hatha poses, breathing techniques, and deep stretching sessions for all levels.</p>
+          </div>
+          <div class="services__card">
+            <i class="ri-mental-health-line"></i>
+            <h4 data-i18n="services.meditation.title">Meditation</h4>
+            <p data-i18n="services.meditation.desc">Find inner peace with guided meditation practices designed to reduce stress, improve focus, and restore mental clarity.</p>
+          </div>
+          <div class="services__card">
+            <i class="ri-run-line"></i>
+            <h4 data-i18n="services.vinyasa.title">Vinyasa Flow</h4>
+            <p data-i18n="services.vinyasa.desc">Energize your practice with dynamic sequences that link breath to movement in a powerful, flowing yoga style.</p>
+          </div>
+          <div class="services__card">
+            <i class="ri-leaf-line"></i>
+            <h4 data-i18n="services.yin.title">Yin Yoga</h4>
+            <p data-i18n="services.yin.desc">Release deep tension with slow-paced, floor-based poses held for longer durations to increase flexibility and relaxation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+      <div class="section__container about__container">
+        <div class="about__image">
+          <img src="assets/image3.jpg" alt="meditation" />
+        </div>
+        <div class="about__content">
+          <p class="section__subheader" data-i18n="about.subheader">ABOUT US</p>
+          <h2 class="section__header" data-i18n="about.header">Why Practice Yoga With Us?</h2>
+          <p class="about__description" data-i18n="about.desc">
+            At our studio, we believe yoga is for everyone. Whether you're a
+            complete beginner or a seasoned practitioner, our certified instructors
+            guide you through every step of your journey toward a healthier, more
+            balanced life.
+          </p>
+          <div class="about__stats">
+            <div class="about__stat">
+              <h3>10+</h3>
+              <p data-i18n="about.stat1">Years of Experience</p>
+            </div>
+            <div class="about__stat">
+              <h3>500+</h3>
+              <p data-i18n="about.stat2">Happy Members</p>
+            </div>
+            <div class="about__stat">
+              <h3>20+</h3>
+              <p data-i18n="about.stat3">Expert Instructors</p>
+            </div>
+          </div>
+          <button class="btn" data-i18n="about.btn">LEARN MORE</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLASSES SECTION -->
+    <section class="classes" id="portfolio">
+      <div class="section__container">
+        <p class="section__subheader" data-i18n="classes.subheader">OUR CLASSES</p>
+        <h2 class="section__header" data-i18n="classes.header">Find The Right Class For You</h2>
+        <div class="classes__grid">
+          <div class="classes__card">
+            <img src="assets/image2.jpg" alt="outdoor yoga" />
+            <div class="classes__card__content">
+              <h4 data-i18n="classes.outdoor.title">Outdoor Yoga</h4>
+              <p data-i18n="classes.outdoor.schedule">Mon, Wed, Fri · 8:00 AM</p>
+              <span data-i18n="classes.outdoor.price">$25 / session</span>
+            </div>
+          </div>
+          <div class="classes__card">
+            <img src="assets/image4.jpg" alt="group sessions" />
+            <div class="classes__card__content">
+              <h4 data-i18n="classes.group.title">Group Sessions</h4>
+              <p data-i18n="classes.group.schedule">Tue, Thu · 10:00 AM</p>
+              <span data-i18n="classes.group.price">$20 / session</span>
+            </div>
+          </div>
+          <div class="classes__card">
+            <img src="assets/image6.jpg" alt="advanced flow" />
+            <div class="classes__card__content">
+              <h4 data-i18n="classes.advanced.title">Advanced Flow</h4>
+              <p data-i18n="classes.advanced.schedule">Sat, Sun · 7:00 AM</p>
+              <span data-i18n="classes.advanced.price">$30 / session</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEDITATION BANNER SECTION -->
+    <section class="banner">
+      <div class="banner__content">
+        <p class="section__subheader" data-i18n="banner.subheader">INNER PEACE</p>
+        <h2 class="section__header" data-i18n="banner.header">Begin Your Meditation Journey</h2>
+        <p data-i18n="banner.desc">
+          Let go of the noise and discover the stillness within. Our meditation
+          classes help you breathe, slow down, and reconnect with yourself
+          through guided sessions and mindful movement.
+        </p>
+        <button class="btn" data-i18n="banner.btn">START TODAY</button>
+      </div>
+      <div class="banner__image">
+        <img src="assets/image5.jpg" alt="meditation with candles" />
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <div class="section__container contact__container">
+        <p class="section__subheader" data-i18n="contact.subheader">CONTACT US</p>
+        <h2 class="section__header" data-i18n="contact.header">Get In Touch</h2>
+        <div class="contact__content">
+          <div class="contact__info">
+            <div class="contact__info__item">
+              <i class="ri-map-pin-2-fill"></i>
+              <div>
+                <h4 data-i18n="contact.location.title">Location</h4>
+                <p data-i18n="contact.location.value">123 Wellness Ave, New York, NY 10001</p>
+              </div>
+            </div>
+            <div class="contact__info__item">
+              <i class="ri-phone-fill"></i>
+              <div>
+                <h4 data-i18n="contact.phone.title">Phone</h4>
+                <p>+1 (555) 234-5678</p>
+              </div>
+            </div>
+            <div class="contact__info__item">
+              <i class="ri-mail-fill"></i>
+              <div>
+                <h4 data-i18n="contact.email.title">Email</h4>
+                <p>hello@yogaclub.com</p>
+              </div>
+            </div>
+            <div class="contact__info__item">
+              <i class="ri-time-fill"></i>
+              <div>
+                <h4 data-i18n="contact.hours.title">Hours</h4>
+                <p data-i18n="contact.hours.value">Mon – Fri: 6AM – 8PM | Sat–Sun: 7AM – 5PM</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact__form">
+            <input type="text" data-i18n-placeholder="contact.form.name" placeholder="Your Name" />
+            <input type="email" data-i18n-placeholder="contact.form.email" placeholder="Your Email" />
+            <textarea data-i18n-placeholder="contact.form.message" placeholder="Your Message" rows="5"></textarea>
+            <button class="btn" type="submit" data-i18n="contact.form.btn">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__container">
+        <div class="footer__col">
+          <a href="#">
+            <img src="assets/logo-white.png" alt="logo" class="footer__logo" />
+          </a>
+          <p data-i18n="footer.desc">
+            Join our yoga community and transform your life through mindful
+            movement, breathwork, and inner peace.
+          </p>
+          <ul class="footer__socials">
+            <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+            <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
+            <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+            <li><a href="#"><i class="ri-youtube-fill"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.links.title">Quick Links</h4>
+          <ul>
+            <li><a href="#" data-i18n="footer.links.home">Home</a></li>
+            <li><a href="#service" data-i18n="footer.links.services">Services</a></li>
+            <li><a href="#portfolio" data-i18n="footer.links.classes">Classes</a></li>
+            <li><a href="#contact" data-i18n="footer.links.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.classes.title">Classes</h4>
+          <ul>
+            <li><a href="#" data-i18n="services.hatha.title">Hatha Yoga</a></li>
+            <li><a href="#" data-i18n="services.meditation.title">Meditation</a></li>
+            <li><a href="#" data-i18n="services.vinyasa.title">Vinyasa Flow</a></li>
+            <li><a href="#" data-i18n="services.yin.title">Yin Yoga</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.schedule.title">Schedule</h4>
+          <ul>
+            <li><a href="#" data-i18n="footer.schedule.1">Mon – Fri: 6AM – 8PM</a></li>
+            <li><a href="#" data-i18n="footer.schedule.2">Saturday: 7AM – 6PM</a></li>
+            <li><a href="#" data-i18n="footer.schedule.3">Sunday: 8AM – 4PM</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <p data-i18n="footer.copyright">© 2026 Yoga Club. All Rights Reserved.</p>
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
