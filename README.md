@@ -3,7 +3,7 @@
 > A modern, fully responsive yoga studio website with automatic multilingual support (EN / FR / ES / DE), smooth scroll animations, and a complete multi-section layout.
 
 <p align="center">
-  <img src="assets/header.png" alt="Yoga Club Preview" width="280" />
+  <img src="assets/screenshot.png" alt="Yoga Club Preview" width="280" />
 </p>
 
 ---
